@@ -1,0 +1,66 @@
+/*Se sacan margenes y rellenos predeterminados*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilos para el body*/
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(143, 141, 138);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/*Estilos para el div*/
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+}
+
+/*Estilos para el button*/
+button{
+    background-color: yellow;
+    border-radius: 15px;
+    height: 50px;
+    width: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/*Animación de rotación para la imagen*/
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/*Estilos para la imagen que va a girar (spinner)*/
+#imagen-giratoria{
+    background-color: yellow;
+    height: 75px;
+    width: 75px;
+    margin: 20px;
+    display: none; 
+    animation: spin 10s linear;   /*Se da la duracion de la animacion y que va a ser despacio el movimiento*/
+    /*transform-origin: top right;   para cambiar el punto de rotacion (esquiena superior derecha)*/
+}
+
+/*Estilos del footer*/
+footer{
+    height: 50px;
+    width: 100%;
+    font-weight: bolder;
+    align-content: space-around;
+    text-align: center;
+    margin-top: auto;
+}
